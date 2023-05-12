@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-function RatingSelect() {
+function RatingSelect({ select }) {
     const [selected, setSelected] = useState(10)
     const handleChange = (e) => {
         setSelected(+e.currentTarget.value)
@@ -9,7 +9,6 @@ function RatingSelect() {
     }
     
   return (
-    <div>RatingSelect
         <ul className="rating">
             <li>
                 <input 
@@ -112,7 +111,6 @@ function RatingSelect() {
                   <label htmlFor="num10">10</label>
             </li>
         </ul>
-    </div>
     
   )
 }
